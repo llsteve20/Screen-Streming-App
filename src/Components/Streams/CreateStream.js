@@ -1,7 +1,8 @@
 import React, {Component} from "react";
-import { updateSyncErrors } from "redux-form";
-import { formValues } from "redux-form";
 import {Field, reduxForm} from "redux-form";
+import { connect } from 'react-redux';
+
+import { createStreams } from '../../Actions'
 
 class CreateStream extends Component{
     renderError({error, touched}){
